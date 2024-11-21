@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Inventory Management System</h1>
+
+    <div class="nk">
+      <input type="text" id="itemName" placeholder="Item Name" required>
+      <input type="number" id="quantity" placeholder="Quantity" required>
+      <input type="number" id="price" placeholder="Price" required>
+      <select id="category" required>
+        <option value="">Select Category</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Groceries">Groceries</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Furniture">Furniture</option>
+      </select>
+      <button id="addItem">Add Item</button>
+    </div>
+
+    <div class="nkk">
+      <button id="sortAsc">Sort by Price (Asc)</button>
+      <button id="sortDesc">Sort by Price (Desc)</button>
+      <input type="text" id="searchBar" placeholder="Search by Name or Category">
+    </div>
+
+    <div class="inventory">
+      <h2>Inventory List</h2>
+      <table id="inventoryTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <p id="totalValue">Total Inventory Value: $0</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
